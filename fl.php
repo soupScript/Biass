@@ -3,7 +3,7 @@ if (isset($_POST['makec'])){
   setcookie("gotos", "fl", time() + (86400 * 1000), "/");
 }include("header.php");
 
-$databasel = new SQLite3('postsl.db');
+//$databasel = new SQLite3('postsl.db');
 ?>
 
 <!DOCTYPE html>
@@ -15,13 +15,3 @@ $databasel = new SQLite3('postsl.db');
 </form>
 <br>
 <hr style="color:white; height:4px; border-width:5px">
-<form>
-  <input type=text name=il>
-  <input type=submit name=submitl value=submit>
-</form>
-
-<?php
-if (isset($_POST['submitl'])){
-  
-}
-?>
